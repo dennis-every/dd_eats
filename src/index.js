@@ -1,5 +1,12 @@
 import './styles.css';
+import Logo from './images/logo.png';
 
-const title = document.querySelector('h1');
+const loadLogo = () => {
+  const logo = document.getElementById('logo');
+  logo.src = Logo;
+  logo.alt = 'logo';
+};
 
-console.log(title);
+window.onload = () => {
+  loadLogo();
+};
