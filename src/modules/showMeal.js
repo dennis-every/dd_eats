@@ -12,7 +12,10 @@ const showMeal = (meal) => {
     <img src=${meal.strMealThumb} class="card-img-top" alt=${meal.strMeal}>
     <div class="card-body">
       <h3>${meal.strMeal}</h3>
-      <p>${meal.strArea}</p>
+      <span>${meal.strArea}</span>
+      <div class="text-end">
+        <button id="commentsBtn" class='btn btn-outline-success'>Comments</button>
+      </div>  
     </div>
   </article>  
   `;

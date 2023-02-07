@@ -7,3 +7,7 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+#commentsBtn {
+  border-radius: 1.2rem;
+}
