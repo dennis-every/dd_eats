@@ -1,0 +1,17 @@
+#meals {
+  padding-top: 1rem;
+  padding-bottom: 10rem;
+}
+
+.card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  color: inherit;
+}
+
+#commentsBtn {
+  border-radius: 1.2rem;
+}
