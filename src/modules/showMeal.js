@@ -11,7 +11,10 @@ const showMeal = (meal) => {
   <article class='card'>
     <img src=${meal.strMealThumb} class="card-img-top" alt=${meal.strMeal}>
     <div class="card-body">
-      <h3>${meal.strMeal}</h3>
+      <header class='d-flex justify-content-between'>
+        <h4>${meal.strMeal}</h4>
+        <a href="#"><i class="fa-regular fa-heart fa-2x"></i></a> 
+      </header>
       <span>${meal.strArea}</span>
       <div class="text-end">
         <button id="commentsBtn" class='btn btn-outline-success'>Comments</button>
