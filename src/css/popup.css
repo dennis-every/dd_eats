@@ -1,0 +1,12 @@
+/* Pop up stytling */
+
+.image__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thumb {
+  width: 300px;
+  height: auto;
+}
