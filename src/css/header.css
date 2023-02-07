@@ -1,0 +1,12 @@
+#nav {
+  background: gray;
+  margin: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  height: 55px;
+  border-radius: 50%;
+}
