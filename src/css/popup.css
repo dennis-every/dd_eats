@@ -1,4 +1,19 @@
 /* Pop up stytling */
+.display__none {
+  display: none;
+}
+
+.display__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*To block the scroll bar */
+.block__scroll {
+  overflow: hidden;
+}
 
 .image__section {
   display: flex;
@@ -9,4 +24,40 @@
 .thumb {
   width: 300px;
   height: auto;
+  margin: 20px 0;
+}
+
+.add__comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+}
+
+#pop__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90vh;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+#pop__close {
+  width: 20px;
+  position: absolute;
+  top: 7%;
+  right: 7%;
+  cursor: pointer;
 }
