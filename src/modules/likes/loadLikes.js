@@ -1,4 +1,4 @@
-import getLikes from './getLikes.js';
+import getLikes from './api/getLikes.js';
 import showLike from './showLike.js';
 
 const loadLikes = async () => {

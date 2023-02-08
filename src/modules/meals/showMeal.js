@@ -17,10 +17,10 @@ const showMeal = (meal) => {
           <span class="fs-6">${meal.strArea}</span>
         </div>
         <div class="col d-flex justify-content-end">
-          <div class="d-flex justify-content-center flex-column align-items-center"> 
-            <a href="#"><i class="fa-regular fa-heart fa-2x"></i></a>
+          <a href="#" id="like_${meal.idMeal}" class="d-flex justify-content-center flex-column align-items-center">
+            <i class="fa-regular fa-heart fa-2x"></i>
             <small id="likes_${meal.idMeal}">0 likes</small>
-          </div>
+          </a>
         </div>
       </header>
       <div class="row mt-3">
