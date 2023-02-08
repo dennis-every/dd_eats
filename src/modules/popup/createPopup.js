@@ -8,17 +8,18 @@ const createPopup = () => {
     <div class="image__section">
       <img class="thumb" src="" alt="MEAL IMAGE"/>
       <h2 class="mealName"></h2>
-    </div>
+    </div>    
     <section class="information">
-      <h4 class="category"></h2>
-      <h4 class="area"></h2>
+      <h4 class="category"></h4>
+      <h4 class="area"></h4>
       <p class="instructions"></p>
-
     </section>
     <section>
       <h2>Comments</h2>
-      <div class="comments"></div>
-
+      <div id='previous__comments'>
+        <ul id="comment__dates"></ul>
+        <ul id="comment__comment"></ul>
+      </div>
     </section>
     <section >
       <form class="add__comment" action="">
