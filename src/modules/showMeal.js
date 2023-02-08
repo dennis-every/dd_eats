@@ -1,4 +1,5 @@
 import '../css/card.css';
+import fillPopup from './popup/fillPopup.js';
 
 const mealsList = document.getElementById('meals');
 
@@ -17,12 +18,19 @@ const showMeal = (meal) => {
       </header>
       <span>${meal.strArea}</span>
       <div class="text-end">
-        <button id="commentsBtn" class='btn btn-outline-success'>Comments</button>
+        <button id=${meal.idMeal} class='btn btn-outline-success'>Comments</button>
       </div>  
     </div>
   </article>  
   `;
+
   mealsList.appendChild(mealElement);
+  // add event listener
+  const btn = document.getElementById(meal.idMeal);
+  btn.addEventListener('click', () => {
+    fillPopup(meal.idMeal);
+  });
+  // add event listener
 };
 
 export default showMeal;
