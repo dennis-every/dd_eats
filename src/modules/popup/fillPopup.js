@@ -1,5 +1,6 @@
 // GET function to load name, category and instructions
 import showPopup from './showPopup.js';
+import loadComments from '../comments/loadComments.js';
 
 const fillPopup = async (idMeal) => {
   const url = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=';
@@ -17,6 +18,8 @@ const fillPopup = async (idMeal) => {
   instructions.innerHTML = `<b>Instructions: </b>${dataArray.strInstructions}`;
   mealName.innerHTML = dataArray.strMeal;
   mealImage.src = dataArray.strMealThumb;
+  // Load previous comments
+  loadComments(idMeal);
   showPopup();
 };
 
