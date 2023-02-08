@@ -10,7 +10,7 @@
   justify-content: center;
 }
 
-/*To block the scroll bar */
+/* To block the scroll bar */
 .block__scroll {
   overflow: hidden;
 }

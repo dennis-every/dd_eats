@@ -1,10 +1,10 @@
-import hidePopup from "./hidePopup";
+import hidePopup from './hidePopup.js';
 
 const createPopup = () => {
-    const popupSection = document.getElementById('popup');
-    const popCtn = document.createElement('section');
-    popCtn.setAttribute('id', 'pop__container');
-    popCtn.innerHTML = `    
+  const popupSection = document.getElementById('popup');
+  const popCtn = document.createElement('section');
+  popCtn.setAttribute('id', 'pop__container');
+  popCtn.innerHTML = `    
     <div class="image__section">
       <img class="thumb" src="" alt="MEAL IMAGE"/>
       <h2 class="mealName"></h2>
@@ -28,13 +28,12 @@ const createPopup = () => {
       </form>
     </section>
     <i id='pop__close' class="fa-solid fa-xmark"></i>    
-    `
-    popupSection.appendChild(popCtn);
-    const closeIcon = document.getElementById('pop__close');
-    closeIcon.addEventListener('click', () => {
-        hidePopup();          
-    });
-
-}
+    `;
+  popupSection.appendChild(popCtn);
+  const closeIcon = document.getElementById('pop__close');
+  closeIcon.addEventListener('click', () => {
+    hidePopup();
+  });
+};
 
 export default createPopup;
