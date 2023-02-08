@@ -1,4 +1,4 @@
-import postLike from './postLike.js';
+import postLike from './api/postLike.js';
 
 const addLikeEventHandler = (e) => {
   e.preventDefault();
