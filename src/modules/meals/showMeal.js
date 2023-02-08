@@ -18,7 +18,7 @@ const showMeal = (meal) => {
         </div>
         <div class="col d-flex justify-content-end">
           <div class="d-flex justify-content-center flex-column align-items-center"> 
-            <a href="#"><i class="fa-regular fa-heart fa-2x"></i></a>
+            <a href="#" id="like_${meal.idMeal}"><i class="fa-regular fa-heart fa-2x"></i></a>
             <small id="likes_${meal.idMeal}">0 likes</small>
           </div>
         </div>
