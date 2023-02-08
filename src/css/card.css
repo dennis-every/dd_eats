@@ -10,6 +10,7 @@
 
 .card a {
   color: inherit;
+  text-decoration: none;
 }
 
 .commentsBtn {
