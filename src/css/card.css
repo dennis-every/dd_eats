@@ -5,13 +5,13 @@
 
 .card {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .card a {
   color: inherit;
 }
 
-#commentsBtn {
+.commentsBtn {
   border-radius: 1.2rem;
 }
