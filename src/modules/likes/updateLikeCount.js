@@ -1,5 +1,6 @@
 const createLikedElement = () => {
   const likedElement = document.createElement('i');
+  likedElement.style.color = 'green';
   likedElement.classList.add('fa-solid');
   likedElement.classList.add('fa-heart');
   likedElement.classList.add('fa-2x');

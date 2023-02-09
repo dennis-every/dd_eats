@@ -1,9 +1,20 @@
 #nav {
-  background: gray;
+  background: black;
+  color: white;
+  font-weight: bold;
   margin: 0;
   height: 80px;
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#nav a:hover {
+  color: #02c167;
 }
 
 #logo {
