@@ -12,7 +12,7 @@ const mealCard = (meal) => {
       <div class="card-body">
         <header class='row'>
           <div class="col">
-            <span class='fs-3'>${meal.strMeal}</span><br> 
+            <span class='fs-5'>${meal.strMeal}</span><br> 
             <span class="fs-6">${meal.strArea}</span>
           </div>
           <div class="col d-flex justify-content-end">
