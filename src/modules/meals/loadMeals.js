@@ -11,7 +11,7 @@ const loadMeals = async () => {
   const meals = await getMeals();
   meals.forEach((meal) => {
     const cardElement = mealCard(meal);
-    showMeal(cardElement);
+    showMeal(cardElement, meal);
     loadLikeEventListener(meal);
   });
   loadLikes();

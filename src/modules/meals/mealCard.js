@@ -1,5 +1,4 @@
 import '../../css/card.css';
-import fillPopup from '../popup/fillPopup.js';
 
 const mealCard = (meal) => {
   const mealElement = document.createElement('li');
@@ -33,11 +32,6 @@ const mealCard = (meal) => {
     </div>
   </article>  
   `;
-  // Add event listener
-  const btn = document.getElementById(`comments_${meal.idMeal}`);
-  btn.addEventListener('click', () => {
-    fillPopup(meal.idMeal);
-  });
   return mealElement;
 };
 
