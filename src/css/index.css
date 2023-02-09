@@ -8,7 +8,7 @@ ul {
   padding: 0;
 }
 
-ul > li > a {
+ul li a {
   color: inherit;
   text-decoration: none;
 }
