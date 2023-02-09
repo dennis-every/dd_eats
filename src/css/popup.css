@@ -57,14 +57,14 @@
 #pop__container {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   background-color: #fff;
-  overflow-y: scroll;   
+  overflow-y: scroll;
 }
 
 ::-webkit-scrollbar {
   display: none;
-} 
+}
 
 #pop__close {
   width: 20px;
@@ -84,7 +84,7 @@
 }
 
 #comment__button {
-  margin-top: 15px;  
+  margin-top: 15px;
 }
 
 .load__comments {
@@ -93,6 +93,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 
 #comment__card {
@@ -116,17 +117,13 @@
   text-justify: inter-word;
 }
 
-.load__comments {
-  padding: 20px;
-}
-
 @media (min-width: 600px) {
   .comment__section {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-around;
-  }  
+  }
 
   #pop__container {
     top: 5%;
