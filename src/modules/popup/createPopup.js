@@ -34,11 +34,11 @@ const createPopup = () => {
     <i id='pop__close' class="fa-solid fa-xmark"></i>    
     `;
   popupSection.appendChild(popCtn);
-  //Event listener for the close icon
+  // Event listener for the close icon
   const closeIcon = document.getElementById('pop__close');
   closeIcon.addEventListener('click', () => {
     hidePopup();
-  });  
+  });
 };
 
 export default createPopup;

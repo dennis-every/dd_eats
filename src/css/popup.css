@@ -65,11 +65,11 @@
 
 #previous__comments {
   display: flex;
-  padding-bottom: 30px;  
+  padding-bottom: 30px;
 }
 
 #comment__dates {
-  margin-right: 20px;  
+  margin-right: 20px;
 }
 
 #comment__button {
@@ -79,7 +79,6 @@
 .load__comments {
   max-width: 400px;
 }
-
 
 @media (min-width: 600px) {
   .comment__section {
@@ -92,9 +91,4 @@
   .load__comments {
     margin-right: 25px;
   }
-
 }
-
-
-
-

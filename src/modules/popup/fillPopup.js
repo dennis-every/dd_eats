@@ -22,12 +22,12 @@ const fillPopup = async (idMeal) => {
   // Load previous comments
   loadComments(idMeal);
   showPopup();
-  //Event listener for the comment button
+  // Event listener for the comment button
   const form = document.querySelector('.add__comment');
-  form.addEventListener('submit', (e) => {    
+  form.addEventListener('submit', (e) => {
     e.preventDefault();
-    postComments(idMeal);    
-  })
+    postComments(idMeal);
+  });
 };
 
 export default fillPopup;
