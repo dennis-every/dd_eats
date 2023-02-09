@@ -17,16 +17,16 @@ const createPopup = () => {
     <section class='comment__section'>
       <section class='load__comments'>
         <h2 id='comments__title'>Comments</h2>
-        <div id='previous__comments'>
-          <ul id="comment__dates"></ul>
+        <div id='previous__comments'>          
           <ul id="comment__comment"></ul>
         </div>
+        <h6 id='error__message'></h6>
       </section>
       <section >
         <form class="add__comment" action="">
           <h2>Add your comment</h2>
           <input id='input__name' class='form-control' type="text" placeholder="Your name" autocomplete='off' required>
-          <textarea id='input__comment' class='form-control' type="text" maxlength="50" placeholder="Your insights" autocomplete='off' required></textarea>
+          <textarea id='input__comment' class='form-control' type="text" rows='6' maxlength="50" placeholder="Your insights" autocomplete='off' required></textarea>
           <button id='comment__button' class='btn btn-outline-success commentsBtn' type="sumit">Comment</button>
         </form>
       </section>
