@@ -19,6 +19,12 @@
 }
 
 #logo {
-  height: 55px;
+  height: 60px;
   border-radius: 50%;
+  padding: 2px;
+}
+
+#logo:hover {
+  box-shadow: -2px 2px 5px #02c167;
+  height: 64px;
 }
