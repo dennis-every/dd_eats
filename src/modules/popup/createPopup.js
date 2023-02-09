@@ -16,7 +16,7 @@ const createPopup = () => {
     </section>
     <section class='comment__section'>
       <section class='load__comments'>
-        <h2>Comments</h2>
+        <h2 id='comments__title'>Comments</h2>
         <div id='previous__comments'>
           <ul id="comment__dates"></ul>
           <ul id="comment__comment"></ul>

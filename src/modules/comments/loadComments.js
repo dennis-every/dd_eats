@@ -1,4 +1,5 @@
 import getComments from './api/getComments.js';
+import commentsCounter from './commentsCounter.js';
 
 const loadComments = async (idMeals) => {
   const datesCntr = document.getElementById('comment__dates');
@@ -24,6 +25,7 @@ const loadComments = async (idMeals) => {
     prevComments = 'There are no comments yet for this meal.';
     commentCntr.innerHTML = prevComments;
   }
+  commentsCounter();
 };
 
 export default loadComments;
