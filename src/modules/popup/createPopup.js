@@ -31,7 +31,7 @@ const createPopup = () => {
         </form>
       </section>
     </section>
-    <i id='pop__close' class="fa-solid fa-xmark"></i>    
+    <i id='pop__close' class="fa-solid fa-xmark fa-2x"></i>    
     `;
   popupSection.appendChild(popCtn);
   // Event listener for the close icon
