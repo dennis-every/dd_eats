@@ -2,8 +2,10 @@ import getMeals from './getMeals.js';
 import showMeal from './showMeal.js';
 import loadLikes from '../likes/loadLikes.js';
 import { loadLikeEventListener } from '../likes/addLike.js';
-import updateCounter from './updateCounter.js';
+import { showCountMeals } from './counter.js';
 import mealCard from './mealCard.js';
+
+const mealsCountContainer = document.getElementById('mealsCountContainer');
 
 const loadMeals = async () => {
   const meals = await getMeals();
@@ -13,8 +15,7 @@ const loadMeals = async () => {
     loadLikeEventListener(meal);
   });
   loadLikes();
-  const mealsCount = meals.length;
-  updateCounter(mealsCount);
+  showCountMeals(meals, mealsCountContainer);
 };
 
 export default loadMeals;
