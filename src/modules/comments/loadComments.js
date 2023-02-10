@@ -10,16 +10,16 @@ const loadComments = async (idMeals) => {
   if (comments) {
     comments.forEach((e) => {
       prevComments += `
-        <li id='comment__card'>
+        <li class='comment__card'>
           <h5><b>@${e.username}</b></h5>
           <h5>${e.comment}</h5>
-          <h6 id='date__text' class="text-end">${e.creation_date}</h6>
+          <h6 class="date__text text-end">${e.creation_date}</h6>
         </li>
       `;
     });
     commentCntr.innerHTML = prevComments;
   } else {
-    commentCntr.innerHTML = prevComments;
+    commentCntr.innerHTML = '';
     container.textContent = 'There are no comments yet for this meal.';
   }
   commentsCounter();

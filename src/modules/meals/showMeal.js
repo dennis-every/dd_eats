@@ -5,7 +5,8 @@ const showMeal = (mealCardElement, meal) => {
   mealsList.appendChild(mealCardElement);
 
   const btn = document.getElementById(`comments_${meal.idMeal}`);
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', () => { 
+    console.log('Id meal when click comment button', meal.idMeal)   
     fillPopup(meal.idMeal);
   });
 };
