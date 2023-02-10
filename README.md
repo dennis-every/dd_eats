@@ -3,10 +3,11 @@
 <div align="center">
   <h1><b>UBER EATS CLONE</b></h1>
   <br />
-  <img src="./src/images/mobile.png" alt="mobile_screenshot" width="50%"  height="80%" />
+  <img src="./src/images/desktop.png" alt="desktop_screenshot" width="100%"  height="100%" />
   <br />
   <br />
-  <img src="./src/images/desktop.png" alt="desktop_screenshot" width="80%"  height="80%" />
+  <img src="./src/images/mobile.png" alt="mobile_screenshot" width="40%"  height="100%" />
+  <img src="./src/images/modal.png" alt="modal_screenshot" width="40%"  height="100%" />
   <br />
 </div>
 
@@ -27,7 +28,7 @@
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
-  - [👥 Author ](#-author-)
+  - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -39,7 +40,7 @@
 
 # 📖 About <a name="about"></a>
 
-**UBER EATS CLONE** is a website which displays various meals from the meals db api. It  allows users to like and comment on the meals. All data is preserved thanks to the external involvement api service.
+**UBER EATS CLONE** is a website which displays various meals from the meals db api. It allows users to like and comment on the meals. All data is preserved thanks to the external involvement api service.
 
 ## 🛠 Built With <a name="built-with"></a>
 
