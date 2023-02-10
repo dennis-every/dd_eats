@@ -1,7 +1,6 @@
 import postComments from '../comments/api/postComments.js';
 import hidePopup from './hidePopup.js';
 
-
 const createPopup = () => {
   const popupSection = document.getElementById('popup');
   const popCtn = document.createElement('section');
@@ -43,13 +42,11 @@ const createPopup = () => {
   });
   // Event listener for the comment button
   const form = document.getElementById('form__element');
-  console.log ('Form element', form);
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const idMeal = document.querySelector('.category').id;
-    console.log('ID meals before postComments', idMeal)    
-    postComments(idMeal);    
+    postComments(idMeal);
   });
 };
 

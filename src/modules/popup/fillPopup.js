@@ -1,7 +1,6 @@
 // GET function to load name, category and instructions
 import showPopup from './showPopup.js';
 import loadComments from '../comments/loadComments.js';
-import postComments from '../comments/api/postComments.js';
 
 const fillPopup = async (idMeal) => {
   const url = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=';
@@ -9,7 +8,7 @@ const fillPopup = async (idMeal) => {
   const data = await response.json();
 
   const category = document.querySelector('.category');
-  category.setAttribute('id',idMeal);
+  category.setAttribute('id', idMeal);
   const area = document.querySelector('.area');
   const instructions = document.querySelector('.instructions');
   const mealName = document.querySelector('.mealName');
@@ -23,10 +22,9 @@ const fillPopup = async (idMeal) => {
   const formCnt = document.querySelector('.add__comment');
   formCnt.setAttribute('id', idMeal);
   // Load previous comments
-  console.log('ID meals before loadcomments', idMeal)
+
   loadComments(idMeal);
   showPopup();
-  
 };
 
 export default fillPopup;

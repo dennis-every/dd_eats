@@ -16,12 +16,10 @@ const postComments = async (idMeal) => {
     },
     body: JSON.stringify(dataToPost),
   });
-  
+
   user.value = '';
   comment.value = '';
   loadComments(idMeal);
-
-  console.log('At the end of POST comment', idMeal)
 
   if (!response.ok) {
     const message = `An error has occured: ${response.status}`;
