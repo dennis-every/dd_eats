@@ -89,6 +89,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Uber Eats Clone](https://dennis-every.github.io/dd_eats/dist)
+- [Uber Eats Clone Video presentation](https://drive.google.com/file/d/1yDoaZhpB9veen-tW___jv-mks-0a1kFP/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
