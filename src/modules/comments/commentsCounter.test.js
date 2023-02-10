@@ -7,11 +7,11 @@ import commentsCounter from './commentsCounter.js';
 describe('Test1', () => {
   document.body.innerHTML = `
     <h2 id='comments__title'></h2>
-    <ul id="comment__dates"></ul>
+    <ul id="comment__comment"></ul>
   `;
   commentsCounter();
   const title = document.getElementById('comments__title');
-  const container = document.getElementById('comment__dates');
+  const container = document.getElementById('comment__comment');
   const comment = document.createElement('li');
   comment.innerHTML = 'Comment';
   test("Checking the title when there aren't elements", () => {
