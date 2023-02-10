@@ -2,28 +2,25 @@ import getComments from './api/getComments.js';
 import commentsCounter from './commentsCounter.js';
 
 const loadComments = async (idMeals) => {
-  const datesCntr = document.getElementById('comment__dates');
   const commentCntr = document.getElementById('comment__comment');
   const comments = await getComments(idMeals);
-  let dates = '';
+  const container = document.getElementById('error__message');
+  container.textContent = '';
   let prevComments = '';
-  let temp = '';
   if (comments) {
     comments.forEach((e) => {
-      dates += `
-        <li>${e.creation_date}</li>
-      `;
-      temp = `${e.username}: ${e.comment}`;
       prevComments += `
-        <li>${temp}</li>
+        <li class='comment__card'>
+          <h5><b>@${e.username}</b></h5>
+          <h5>${e.comment}</h5>
+          <h6 class="date__text text-end">${e.creation_date}</h6>
+        </li>
       `;
     });
-    datesCntr.innerHTML = dates;
     commentCntr.innerHTML = prevComments;
   } else {
-    datesCntr.innerHTML = dates;
-    prevComments = 'There are no comments yet for this meal.';
-    commentCntr.innerHTML = prevComments;
+    commentCntr.innerHTML = '';
+    container.textContent = 'There are no comments yet for this meal.';
   }
   commentsCounter();
 };
